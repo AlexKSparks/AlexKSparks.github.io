@@ -17,8 +17,6 @@ header
 .nav {
 	padding:5px;
 	overflow: hidden;
-    position: center;
-	width: relative;
 }
 
 .nav li {
@@ -26,7 +24,6 @@ header
 	text-align: center;
 	width: 50%;
 	float: left;
-    position: center;
     font-size: 1em;
     
 }
@@ -62,7 +59,7 @@ img
   border-radius: 5px;
   padding: 20px;
   font-size: 150%;
-    margin: 1em;
+  margin: 1em;
 }
 
 /*Tablet Screen*/
@@ -81,7 +78,7 @@ img
       color: #fff;
       border-radius: 5px;
       font-size: 150%;
-       margin: 0, 1em;
+       margin: 0em, 1em;
     }
     img
     {
@@ -114,7 +111,7 @@ img
       color: #fff;
       border-radius: 5px;
       font-size: 150%;
-       margin: 0, 1em;
+       margin: 0em, 1em;
     }  
     img
     {
