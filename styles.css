@@ -3,11 +3,131 @@ body
 font-family: 'Monserrat', sans-serif;
     text-align: center;
 }
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?o175wb');
+  src:  url('fonts/icomoon.eot?o175wb#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?o175wb') format('truetype'),
+    url('fonts/icomoon.woff?o175wb') format('woff'),
+    url('fonts/icomoon.svg?o175wb#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+}
+.icon-home3:before {
+  content: "\e902";
+}
+.icon-phone:before {
+  content: "\e942";
+}
+.icon-envelop:before {
+  content: "\e945";
+}
+.icon-user:before {
+  content: "\e971";
+}
+.icon-cog:before {
+  content: "\e994";
+}
+.icon-stats-dots:before {
+  content: "\e99b";
+}
 h1, h2
 {
     font-family: 'Stoke', serif;
     font-size: 2em;
 }
+
+/*SVG animation*/
+.svg 
+{
+    width: 100%;
+    height: auto;
+}
+
+.svg path
+{
+    fill: #000;
+}
+.building-flames path
+{
+    fill: #ff0000;
+}
+@keyframes ufo-building-float 
+{
+    0% {transform: translateY(0)}
+    25% {transform: translateY(-25px)}
+    75% {transform: translateY(25px)}
+    100% {transform: translateY(0)}
+}
+.ufo-building-float
+{
+    animation: ufo-building-float 5s linear infinite;
+}
+
+@keyframes ufo-big
+{
+    0% {opacity: 0}
+    15%, 70% {opacity: 1}
+    85%, 100% {opacity: 0}
+}
+
+@keyframes ufo-small
+{
+    0%, 10% {opacity: 0}
+    25%, 85% {opacity: 1}
+    100% {opacity: 0}
+}
+
+.ufo-big
+{
+    animation: ufo-big 5s ease infinite;
+}
+
+.ufo-small
+{
+    animation: ufo-small 5s ease infinite;
+}
+
+@keyframes ufo-big-lights
+{
+    0% {fill: #000}
+    20% {fill: #fbcb43}
+    40%, 100% {fill: #000}
+}
+
+.ufo-big-lights-light
+{
+    animation: ufo-big-lights 2.5s ease infinite;
+}
+.ufo-big-lights-light--2{animation-delay: .2s}
+.ufo-big-lights-light--3 {animation-delay: .4s}
+.ufo-big-lights-light--4 {animation-delay: .6s}
+.ufo-big-lights-light--5 {animation-delay: .8s}
+
+@keyframes building-flames
+{
+    0% {transform: scale(1, 1)}
+    50% {transform: scale(1, 1.1)}
+    100% {transform: scale(1, 1)}
+}
+.building-flames path
+{
+    fill: #d84437;
+    animation: building-flames .15s ease infinite;
+    transform-origin: center top;
+}
+
+/*Body*/
 header
 {
     text-align: center;
@@ -68,9 +188,10 @@ img
     .wrapper
     {
         display: grid;
-        grid-template-columns: 40% 40%;
+        grid-template-columns: 45% 45%;
         grid-gap: 2em;
         justify-content: space-between;
+
     }
     .project
     {
