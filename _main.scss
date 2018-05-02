@@ -1,10 +1,13 @@
 body
 {
-font: $body-font;
+font-family: $body-font;
+    text-align: center;
 }
 h1, h2
 {
-    font: $header-font;
+ font-family: $header-font;
+    font-size: 2em;
+    
 }
 header
 {
