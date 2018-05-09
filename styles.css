@@ -67,11 +67,11 @@ a
   font-size: 150%;
   margin: 1em;
 }
-#hover1
+.hover
 {
     display:none;
 }
-.project:hover #hover1
+.project:hover .hover
 {
     display: block;
 
