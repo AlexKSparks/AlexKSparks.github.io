@@ -15,11 +15,24 @@ module.exports = function(grunt) {
         
              },
         watch:{
-            sass:{
-                files:['assess/scss/*.scss'],
-                tasks:['sass']
+            scripts:{
+                files:['assess/js/*.js'],
+                tasks:['uglify']
                     }
-                }
+                },
+        
+        uglify:{
+            my_target:{
+                files: {
+                    'js/scripts.js' : ['assets/js/scripts.js']
+                        }
+                    }
+                },
+        
+        jshint: {
+            all: ['assets/js/*.js']
+        }
+        
 	});
 
 
@@ -28,7 +41,7 @@ module.exports = function(grunt) {
 
 
 	//Custom tasks
-	grunt.registerTask('default', ['sass', 'watch']);
+	grunt.registerTask('default', ['sass','uglify', 'jshint', 'watch']);
     
 
 };
