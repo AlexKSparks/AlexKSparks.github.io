@@ -18,6 +18,7 @@
     "load-grunt-tasks": "^3.5.2"
   },
   "dependencies": {
-    "jquery": "^3.3.1"
+    "jquery": "^3.3.1",
+    "susy": "^3.0.5"
   }
 }
