@@ -1,0 +1,24 @@
+@import 'susy-master/sass/susy';
+
+$phone: 320px;
+$tablet: 550px;
+$desktop: 900px;
+
+.wrapper .project{
+    
+    @include susy-breakpoint ($tablet $desktop -1){
+        @include span(6);
+        
+        &:nth-of-type(even){
+            @include last;
+        }
+    }
+}
+
+@include susy-breakpoint($desktop){
+    @include span(3);
+    
+    &:last-child{
+        @include last;
+    }
+}
