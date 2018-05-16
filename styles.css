@@ -80,7 +80,6 @@ a
 /*Tablet Screen*/
 @media (min-width: 550px)
 {
-/*
     .wrapper
     {
         display: grid;
@@ -94,7 +93,6 @@ a
       color: #fff;
       border-radius: 5px;
       font-size: 150%;
-*/
     }
     img
     {
@@ -114,7 +112,6 @@ a
 /*Desktop Screen*/
 @media (min-width: 900px)
 {
-/*
     .wrapper
     {
         display: grid;
@@ -129,7 +126,6 @@ a
       border-radius: 5px;
       font-size: 150%;
     }  
-*/
     img
     {
         width:20%;
