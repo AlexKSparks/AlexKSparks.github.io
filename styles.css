@@ -112,6 +112,7 @@ a
 /*Desktop Screen*/
 @media (min-width: 900px)
 {
+/*
     .wrapper
     {
         display: grid;
@@ -119,6 +120,7 @@ a
         grid-gap: 2em;
         justify-content: space-between;
     }
+*/
     .project
     {
       background-color: #444;
