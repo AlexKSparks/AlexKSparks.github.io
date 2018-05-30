@@ -1,7 +1,12 @@
 body
 {
-font-family: 'Monserrat', sans-serif;
-    text-align: center;
+    font-family: 'Monserrat', sans-serif;
+    text-align: center;    
+    background-image: url(river.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
 }
 h1, h2
 {
