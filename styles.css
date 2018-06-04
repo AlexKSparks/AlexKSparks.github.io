@@ -60,7 +60,8 @@ a
 
 .wrapper 
 {
-  display: block;
+    display: block;
+    margin-top: 15%
 }
 
 .project
@@ -80,6 +81,15 @@ a
 {
     display: block;
 
+}
+#desc
+{
+    background-color: #444;
+    color: white;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 1.2em;
+        margin-top: 7%
 }
 
 /*Tablet Screen*/
