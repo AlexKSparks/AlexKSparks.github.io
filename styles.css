@@ -2,7 +2,7 @@ body
 {
     font-family: 'Monserrat', sans-serif;
     text-align: center;    
-    background-image: url(river.jpg);
+    background-image: url(images/river_mobile.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -85,6 +85,10 @@ a
 /*Tablet Screen*/
 @media (min-width: 550px)
 {
+    body
+    {
+        background-image: url(images/river.jpg);
+    }
     .wrapper
     {
         display: grid;
@@ -126,6 +130,10 @@ a
         justify-content: space-between;
     }
 */
+        body
+    {
+        background-image: url(images/river_Desktop.jpg);
+    }
     .project
     {
       background-color: #444;
