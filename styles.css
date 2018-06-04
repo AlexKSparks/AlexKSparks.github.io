@@ -89,7 +89,21 @@ a
     border-radius: 5px;
     padding: 20px;
     font-size: 1.2em;
-        margin-top: 7%
+}
+
+#wel
+{
+    font-size: 1.2em;
+    animation-name: upDown;
+    animation-duration: 4s linear easing;
+}
+
+@keyframes upDown
+{
+    0% {transform: translateY(0)}
+    25% {transform: translateY(-25px)}
+    75% {transform: translateY(25px)}
+    100% {transform: translateY(0)}
 }
 
 /*Tablet Screen*/
