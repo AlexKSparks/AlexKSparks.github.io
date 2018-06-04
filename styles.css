@@ -49,7 +49,7 @@ ul li a:hover {
 img
 {
     width: 30%;
-
+    border-radius: 50px;
 }
 a
 {
@@ -61,14 +61,14 @@ a
 .wrapper 
 {
     display: block;
-    margin-top: 15%
+    margin-top: 10%;
 }
 
 .project
 {
   background-color: #444;
   color: #fff;
-  border-radius: 5px;
+  border-radius: 10px;
   padding: 20px;
   font-size: 150%;
   margin: 1em;
@@ -80,7 +80,6 @@ a
 .project:hover .hover
 {
     display: block;
-
 }
 #desc
 {
@@ -94,15 +93,14 @@ a
 #wel
 {
     font-size: 1.2em;
-    animation-name: upDown;
-    animation-duration: 4s linear easing;
+    animation: upDown 4s linear infinite;
 }
 
 @keyframes upDown
 {
     0% {transform: translateY(0)}
-    25% {transform: translateY(-25px)}
-    75% {transform: translateY(25px)}
+    25% {transform: translateY(-20px)}
+    75% {transform: translateY(20px)}
     100% {transform: translateY(0)}
 }
 
@@ -122,9 +120,6 @@ a
     }
     .project
     {
-      background-color: #444;
-      color: #fff;
-      border-radius: 5px;
       font-size: 150%;
     }
     img
@@ -160,9 +155,7 @@ a
     }
     .project
     {
-      background-color: #444;
-      color: #fff;
-      border-radius: 5px;
+
       font-size: 150%;
     }  
     img
